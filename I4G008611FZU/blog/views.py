@@ -1,7 +1,11 @@
 from audioop import reverse
 from dataclasses import field
 from msilib.schema import ListView
+from msilib.schema import CreateView, UpdateView, DeleteView
+from msilib.schema import DetailView
 from django.shortcuts import render
+from dataclasses import fields
+from django.urls import reverse_lazy
 
 from I4G008611FZU.blog.models import Post
 
